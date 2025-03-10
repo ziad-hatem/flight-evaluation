@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///Users/ziadhatem/task/flight-evaluation/src/app/providers.tsx"],"sourcesContent":["'use client';\n\nimport { SessionProvider } from 'next-auth/react';\n\nexport default function Providers({ children }: { children: React.ReactNode }) {\n  return <SessionProvider>{children}</SessionProvider>;\n}"],"names":[],"mappings":";;;;AAEA;AAFA;;;AAIe,SAAS,UAAU,EAAE,QAAQ,EAAiC;IAC3E,qBAAO,6LAAC,iJAAA,CAAA,kBAAe;kBAAE;;;;;;AAC3B;KAFwB","debugId":null}},
+    {"offset": {"line": 30, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}
