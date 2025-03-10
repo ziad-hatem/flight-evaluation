@@ -2,8 +2,8 @@ import { PrismaAdapter } from "@auth/prisma-adapter";
 import { NextAuthOptions } from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
 import { compare } from "bcrypt";
-import { prisma } from "@/lib/db";
 import { Role } from "@prisma/client";
+import { prisma } from "./db";
 
 export const authOptions: NextAuthOptions = {
   // Cast the adapter to 'any' to bypass the type incompatibility.

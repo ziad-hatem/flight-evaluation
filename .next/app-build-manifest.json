@@ -1,206 +1,42 @@
 {
   "pages": {
-    "/_not-found/page": [
-      "static/chunks/webpack-29ebadaebe2fcb3f.js",
-      "static/chunks/4bd1b696-04574e32451c26c8.js",
-      "static/chunks/684-908dda7c2f5c828a.js",
-      "static/chunks/main-app-2c765107dc2766e0.js",
-      "static/chunks/app/_not-found/page-3633d9c3c22eaa37.js"
-    ],
-    "/layout": [
-      "static/chunks/webpack-29ebadaebe2fcb3f.js",
-      "static/chunks/4bd1b696-04574e32451c26c8.js",
-      "static/chunks/684-908dda7c2f5c828a.js",
-      "static/chunks/main-app-2c765107dc2766e0.js",
-      "static/css/5a00f273a5ae0541.css",
-      "static/chunks/874-faa9f2699ee9f9e5.js",
-      "static/chunks/108-05468ebbcca9c6b6.js",
-      "static/chunks/app/layout-8b4b198d37a05649.js"
-    ],
-    "/api/airlines/[id]/route": [
-      "static/chunks/webpack-29ebadaebe2fcb3f.js",
-      "static/chunks/4bd1b696-04574e32451c26c8.js",
-      "static/chunks/684-908dda7c2f5c828a.js",
-      "static/chunks/main-app-2c765107dc2766e0.js",
-      "static/chunks/app/api/airlines/[id]/route-61baa7083318de8c.js"
-    ],
-    "/api/airlines/route": [
-      "static/chunks/webpack-29ebadaebe2fcb3f.js",
-      "static/chunks/4bd1b696-04574e32451c26c8.js",
-      "static/chunks/684-908dda7c2f5c828a.js",
-      "static/chunks/main-app-2c765107dc2766e0.js",
-      "static/chunks/app/api/airlines/route-87c83aa77b667207.js"
-    ],
-    "/api/auth/[...nextauth]/route": [
-      "static/chunks/webpack-29ebadaebe2fcb3f.js",
-      "static/chunks/4bd1b696-04574e32451c26c8.js",
-      "static/chunks/684-908dda7c2f5c828a.js",
-      "static/chunks/main-app-2c765107dc2766e0.js",
-      "static/chunks/app/api/auth/[...nextauth]/route-8998f36b155ce492.js"
-    ],
-    "/api/flights/[id]/route": [
-      "static/chunks/webpack-29ebadaebe2fcb3f.js",
-      "static/chunks/4bd1b696-04574e32451c26c8.js",
-      "static/chunks/684-908dda7c2f5c828a.js",
-      "static/chunks/main-app-2c765107dc2766e0.js",
-      "static/chunks/app/api/flights/[id]/route-6a30adf9147980cf.js"
-    ],
-    "/api/auth/profile/route": [
-      "static/chunks/webpack-29ebadaebe2fcb3f.js",
-      "static/chunks/4bd1b696-04574e32451c26c8.js",
-      "static/chunks/684-908dda7c2f5c828a.js",
-      "static/chunks/main-app-2c765107dc2766e0.js",
-      "static/chunks/app/api/auth/profile/route-fd48a963a48e022e.js"
-    ],
-    "/api/ratings/route": [
-      "static/chunks/webpack-29ebadaebe2fcb3f.js",
-      "static/chunks/4bd1b696-04574e32451c26c8.js",
-      "static/chunks/684-908dda7c2f5c828a.js",
-      "static/chunks/main-app-2c765107dc2766e0.js",
-      "static/chunks/app/api/ratings/route-9b2743212a71c9ef.js"
-    ],
-    "/api/flights/route": [
-      "static/chunks/webpack-29ebadaebe2fcb3f.js",
-      "static/chunks/4bd1b696-04574e32451c26c8.js",
-      "static/chunks/684-908dda7c2f5c828a.js",
-      "static/chunks/main-app-2c765107dc2766e0.js",
-      "static/chunks/app/api/flights/route-aa9f9a369f598104.js"
-    ],
-    "/api/reviews/route": [
-      "static/chunks/webpack-29ebadaebe2fcb3f.js",
-      "static/chunks/4bd1b696-04574e32451c26c8.js",
-      "static/chunks/684-908dda7c2f5c828a.js",
-      "static/chunks/main-app-2c765107dc2766e0.js",
-      "static/chunks/app/api/reviews/route-6b4bec7eb41014b0.js"
-    ],
-    "/api/register/route": [
-      "static/chunks/webpack-29ebadaebe2fcb3f.js",
-      "static/chunks/4bd1b696-04574e32451c26c8.js",
-      "static/chunks/684-908dda7c2f5c828a.js",
-      "static/chunks/main-app-2c765107dc2766e0.js",
-      "static/chunks/app/api/register/route-5f365fbb5c8727bd.js"
-    ],
-    "/about/page": [
-      "static/chunks/webpack-29ebadaebe2fcb3f.js",
-      "static/chunks/4bd1b696-04574e32451c26c8.js",
-      "static/chunks/684-908dda7c2f5c828a.js",
-      "static/chunks/main-app-2c765107dc2766e0.js",
-      "static/chunks/874-faa9f2699ee9f9e5.js",
-      "static/chunks/app/about/page-30634b04bbb84cc7.js"
-    ],
-    "/airlines/page": [
-      "static/chunks/webpack-29ebadaebe2fcb3f.js",
-      "static/chunks/4bd1b696-04574e32451c26c8.js",
-      "static/chunks/684-908dda7c2f5c828a.js",
-      "static/chunks/main-app-2c765107dc2766e0.js",
-      "static/chunks/874-faa9f2699ee9f9e5.js",
-      "static/chunks/app/airlines/page-603852d11e983c3c.js"
-    ],
-    "/admin/page": [
-      "static/chunks/webpack-29ebadaebe2fcb3f.js",
-      "static/chunks/4bd1b696-04574e32451c26c8.js",
-      "static/chunks/684-908dda7c2f5c828a.js",
-      "static/chunks/main-app-2c765107dc2766e0.js",
-      "static/chunks/108-05468ebbcca9c6b6.js",
-      "static/chunks/app/admin/page-62365d18bb056fc9.js"
-    ],
-    "/contact/page": [
-      "static/chunks/webpack-29ebadaebe2fcb3f.js",
-      "static/chunks/4bd1b696-04574e32451c26c8.js",
-      "static/chunks/684-908dda7c2f5c828a.js",
-      "static/chunks/main-app-2c765107dc2766e0.js",
-      "static/chunks/app/contact/page-a9d9bf4bb9e25cbe.js"
-    ],
-    "/flights/page": [
-      "static/chunks/webpack-29ebadaebe2fcb3f.js",
-      "static/chunks/4bd1b696-04574e32451c26c8.js",
-      "static/chunks/684-908dda7c2f5c828a.js",
-      "static/chunks/main-app-2c765107dc2766e0.js",
-      "static/chunks/874-faa9f2699ee9f9e5.js",
-      "static/chunks/app/flights/page-aba990a2bb10e430.js"
-    ],
-    "/my-rates/page": [
-      "static/chunks/webpack-29ebadaebe2fcb3f.js",
-      "static/chunks/4bd1b696-04574e32451c26c8.js",
-      "static/chunks/684-908dda7c2f5c828a.js",
-      "static/chunks/main-app-2c765107dc2766e0.js",
-      "static/chunks/874-faa9f2699ee9f9e5.js",
-      "static/chunks/app/my-rates/page-9d7011673b7c97af.js"
-    ],
-    "/flights/[id]/page": [
-      "static/chunks/webpack-29ebadaebe2fcb3f.js",
-      "static/chunks/4bd1b696-04574e32451c26c8.js",
-      "static/chunks/684-908dda7c2f5c828a.js",
-      "static/chunks/main-app-2c765107dc2766e0.js",
-      "static/chunks/874-faa9f2699ee9f9e5.js",
-      "static/chunks/app/flights/[id]/page-250378aa4f058951.js"
-    ],
-    "/page": [
-      "static/chunks/webpack-29ebadaebe2fcb3f.js",
-      "static/chunks/4bd1b696-04574e32451c26c8.js",
-      "static/chunks/684-908dda7c2f5c828a.js",
-      "static/chunks/main-app-2c765107dc2766e0.js",
-      "static/chunks/874-faa9f2699ee9f9e5.js",
-      "static/chunks/63-f53d361081677c16.js",
-      "static/chunks/app/page-40e643b87e3df17a.js"
-    ],
     "/login/page": [
-      "static/chunks/webpack-29ebadaebe2fcb3f.js",
-      "static/chunks/4bd1b696-04574e32451c26c8.js",
-      "static/chunks/684-908dda7c2f5c828a.js",
-      "static/chunks/main-app-2c765107dc2766e0.js",
-      "static/chunks/874-faa9f2699ee9f9e5.js",
-      "static/chunks/108-05468ebbcca9c6b6.js",
-      "static/chunks/app/login/page-d7f8a48bb021b052.js"
-    ],
-    "/feedback/page": [
-      "static/chunks/webpack-29ebadaebe2fcb3f.js",
-      "static/chunks/4bd1b696-04574e32451c26c8.js",
-      "static/chunks/684-908dda7c2f5c828a.js",
-      "static/chunks/main-app-2c765107dc2766e0.js",
-      "static/chunks/874-faa9f2699ee9f9e5.js",
-      "static/chunks/app/feedback/page-9147facc03caace3.js"
-    ],
-    "/profile/page": [
-      "static/chunks/webpack-29ebadaebe2fcb3f.js",
-      "static/chunks/4bd1b696-04574e32451c26c8.js",
-      "static/chunks/684-908dda7c2f5c828a.js",
-      "static/chunks/main-app-2c765107dc2766e0.js",
-      "static/chunks/874-faa9f2699ee9f9e5.js",
-      "static/chunks/108-05468ebbcca9c6b6.js",
-      "static/chunks/app/profile/page-3014448dfd0e8098.js"
-    ],
-    "/privacy/page": [
-      "static/chunks/webpack-29ebadaebe2fcb3f.js",
-      "static/chunks/4bd1b696-04574e32451c26c8.js",
-      "static/chunks/684-908dda7c2f5c828a.js",
-      "static/chunks/main-app-2c765107dc2766e0.js",
-      "static/chunks/874-faa9f2699ee9f9e5.js",
-      "static/chunks/app/privacy/page-7f00e77054531f82.js"
+      "static/chunks/node_modules_next_dist_1a6ee436._.js",
+      "static/chunks/src_app_favicon_ico_mjs_7c387cfb._.js",
+      "static/chunks/[root of the server]__140ccadf._.css",
+      "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_7e1ade53._.js",
+      "static/chunks/node_modules_541b269e._.js",
+      "static/chunks/src_app_c768b806._.js",
+      "static/chunks/src_app_layout_tsx_aaf7d535._.js",
+      "static/chunks/_3cae7951._.js",
+      "static/chunks/src_app_login_page_tsx_deb56662._.js",
+      "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_fff34f97._.js",
+      "static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc06._.js",
+      "static/chunks/node_modules_next_dist_compiled_38d265cf._.js",
+      "static/chunks/node_modules_next_dist_client_c24f7707._.js",
+      "static/chunks/node_modules_next_dist_3bfaed20._.js",
+      "static/chunks/node_modules_@swc_helpers_cjs_00636ac3._.js",
+      "static/chunks/_e69f0d32._.js",
+      "static/chunks/_a2b209e9._.js"
     ],
     "/register/page": [
-      "static/chunks/webpack-29ebadaebe2fcb3f.js",
-      "static/chunks/4bd1b696-04574e32451c26c8.js",
-      "static/chunks/684-908dda7c2f5c828a.js",
-      "static/chunks/main-app-2c765107dc2766e0.js",
-      "static/chunks/874-faa9f2699ee9f9e5.js",
-      "static/chunks/app/register/page-b9e0045c40719874.js"
-    ],
-    "/terms/page": [
-      "static/chunks/webpack-29ebadaebe2fcb3f.js",
-      "static/chunks/4bd1b696-04574e32451c26c8.js",
-      "static/chunks/684-908dda7c2f5c828a.js",
-      "static/chunks/main-app-2c765107dc2766e0.js",
-      "static/chunks/874-faa9f2699ee9f9e5.js",
-      "static/chunks/app/terms/page-5fb07e183a427331.js"
-    ],
-    "/airlines/[id]/page": [
-      "static/chunks/webpack-29ebadaebe2fcb3f.js",
-      "static/chunks/4bd1b696-04574e32451c26c8.js",
-      "static/chunks/684-908dda7c2f5c828a.js",
-      "static/chunks/main-app-2c765107dc2766e0.js",
-      "static/chunks/874-faa9f2699ee9f9e5.js",
-      "static/chunks/app/airlines/[id]/page-29179a430fb26b26.js"
+      "static/chunks/node_modules_next_dist_1a6ee436._.js",
+      "static/chunks/src_app_favicon_ico_mjs_7c387cfb._.js",
+      "static/chunks/[root of the server]__140ccadf._.css",
+      "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_7e1ade53._.js",
+      "static/chunks/node_modules_541b269e._.js",
+      "static/chunks/src_app_c768b806._.js",
+      "static/chunks/src_app_layout_tsx_aaf7d535._.js",
+      "static/chunks/_8da48eb0._.js",
+      "static/chunks/src_app_register_page_tsx_deb56662._.js",
+      "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_fff34f97._.js",
+      "static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc06._.js",
+      "static/chunks/node_modules_next_dist_compiled_38d265cf._.js",
+      "static/chunks/node_modules_next_dist_client_c24f7707._.js",
+      "static/chunks/node_modules_next_dist_3bfaed20._.js",
+      "static/chunks/node_modules_@swc_helpers_cjs_00636ac3._.js",
+      "static/chunks/_e69f0d32._.js",
+      "static/chunks/_a2b209e9._.js"
     ]
   }
 }
