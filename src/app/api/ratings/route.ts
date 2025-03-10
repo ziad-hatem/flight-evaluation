@@ -1,26 +1,25 @@
-import { NextResponse } from 'next/server';
-import { prisma } from '@/lib/db';
-import { getServerSession } from 'next-auth';
-import { authOptions } from '../auth/[...nextauth]/route';
-
+import { NextResponse } from "next/server";
+import { prisma } from "@/lib/db";
+import { getServerSession } from "next-auth";
+import { authOptions } from "@/lib/authOptions";
 // GET ratings with optional filtering
 export async function GET(req: Request) {
   try {
     const { searchParams } = new URL(req.url);
-    const flightId = searchParams.get('flightId');
-    const userId = searchParams.get('userId');
-    
+    const flightId = searchParams.get("flightId");
+    const userId = searchParams.get("userId");
+
     // Build filter conditions
     const where: any = {};
-    
+
     if (flightId) {
       where.flightId = flightId;
     }
-    
+
     if (userId) {
       where.userId = userId;
     }
-    
+
     // Get ratings with related information
     const ratings = await prisma.rating.findMany({
       where,
@@ -30,25 +29,25 @@ export async function GET(req: Request) {
             id: true,
             name: true,
             email: true,
-            image: true
-          }
+            image: true,
+          },
         },
         flight: {
           include: {
-            airline: true
-          }
-        }
+            airline: true,
+          },
+        },
       },
       orderBy: {
-        createdAt: 'desc'
-      }
+        createdAt: "desc",
+      },
     });
-    
+
     return NextResponse.json(ratings);
   } catch (error) {
-    console.error('Error fetching ratings:', error);
+    console.error("Error fetching ratings:", error);
     return NextResponse.json(
-      { error: 'Failed to fetch ratings' },
+      { error: "Failed to fetch ratings" },
       { status: 500 }
     );
   }
@@ -58,66 +57,60 @@ export async function GET(req: Request) {
 export async function POST(req: Request) {
   try {
     const session = await getServerSession(authOptions);
-    
+
     // Check if user is authenticated
     if (!session) {
-      return NextResponse.json(
-        { error: 'Unauthorized' },
-        { status: 401 }
-      );
+      return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
     }
-    
+
     const body = await req.json();
-    const { 
-      flightId, 
-      checkIn, 
-      boardingExp, 
-      cabinCrew, 
-      seatComfort, 
-      foodQuality, 
-      entertainment, 
-      flightPerf, 
-      valueForMoney, 
-      overallRating 
+    const {
+      flightId,
+      checkIn,
+      boardingExp,
+      cabinCrew,
+      seatComfort,
+      foodQuality,
+      entertainment,
+      flightPerf,
+      valueForMoney,
+      overallRating,
     } = body;
-    
+
     // Validate required fields
     if (!flightId || overallRating === undefined) {
       return NextResponse.json(
-        { error: 'Flight ID and overall rating are required' },
+        { error: "Flight ID and overall rating are required" },
         { status: 400 }
       );
     }
-    
+
     // Check if flight exists
     const flight = await prisma.flight.findUnique({
-      where: { id: flightId }
+      where: { id: flightId },
     });
-    
+
     if (!flight) {
-      return NextResponse.json(
-        { error: 'Flight not found' },
-        { status: 404 }
-      );
+      return NextResponse.json({ error: "Flight not found" }, { status: 404 });
     }
-    
+
     // Check if user has already rated this flight
     const existingRating = await prisma.rating.findUnique({
       where: {
         userId_flightId: {
           userId: session.user.id,
-          flightId
-        }
-      }
+          flightId,
+        },
+      },
     });
-    
+
     let rating;
-    
+
     if (existingRating) {
       // Update existing rating
       rating = await prisma.rating.update({
         where: {
-          id: existingRating.id
+          id: existingRating.id,
         },
         data: {
           checkIn: checkIn ?? existingRating.checkIn,
@@ -128,15 +121,15 @@ export async function POST(req: Request) {
           entertainment: entertainment ?? existingRating.entertainment,
           flightPerf: flightPerf ?? existingRating.flightPerf,
           valueForMoney: valueForMoney ?? existingRating.valueForMoney,
-          overallRating: overallRating ?? existingRating.overallRating
+          overallRating: overallRating ?? existingRating.overallRating,
         },
         include: {
           flight: {
             include: {
-              airline: true
-            }
-          }
-        }
+              airline: true,
+            },
+          },
+        },
       });
     } else {
       // Create new rating
@@ -152,23 +145,23 @@ export async function POST(req: Request) {
           entertainment: entertainment ?? 0,
           flightPerf: flightPerf ?? 0,
           valueForMoney: valueForMoney ?? 0,
-          overallRating
+          overallRating,
         },
         include: {
           flight: {
             include: {
-              airline: true
-            }
-          }
-        }
+              airline: true,
+            },
+          },
+        },
       });
     }
-    
+
     return NextResponse.json(rating, { status: existingRating ? 200 : 201 });
   } catch (error) {
-    console.error('Error creating/updating rating:', error);
+    console.error("Error creating/updating rating:", error);
     return NextResponse.json(
-      { error: 'Failed to create/update rating' },
+      { error: "Failed to create/update rating" },
       { status: 500 }
     );
   }

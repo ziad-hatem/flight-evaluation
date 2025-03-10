@@ -1,13 +1,9 @@
 import { NextResponse } from "next/server";
 import { prisma } from "@/lib/db";
 import { getServerSession } from "next-auth";
-import { authOptions } from "../../auth/[...nextauth]/route";
-
+import { authOptions } from "@/lib/authOptions";
 // GET a specific flight by ID
-export async function GET(
-  req: Request,
-  { params }: { params: { id: string } }
-) {
+export async function GET(req: Request, { params }: any) {
   try {
     const { id } = params;
 
@@ -35,10 +31,7 @@ export async function GET(
 }
 
 // PUT to update a flight (admin only)
-export async function PUT(
-  req: Request,
-  { params }: { params: { id: string } }
-) {
+export async function PUT(req: Request, { params }: any) {
   try {
     const session = await getServerSession(authOptions);
 
@@ -132,10 +125,7 @@ export async function PUT(
 }
 
 // DELETE a flight (admin only)
-export async function DELETE(
-  req: Request,
-  { params }: { params: { id: string } }
-) {
+export async function DELETE(req: Request, { params }: any) {
   try {
     const session = await getServerSession(authOptions);
 
